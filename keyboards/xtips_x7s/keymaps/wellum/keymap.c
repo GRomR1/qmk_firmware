@@ -5,7 +5,7 @@
 
 #define RESET QK_BOOT
 
-#define XXXX KC_NONE
+#define XXXX KC_NO
 
 #define LA_SYM MO(_SYM)
 #define LA_ALT MO(_ALT)
@@ -59,16 +59,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_GAM] = LAYOUT_split_3x5_3(
-        KC_TAB,    KC_Q,      KC_X,      KC_E,      KC_R,             KC_NONE,   KC_NONE,   KC_UP,        KC_NONE,     KC_TAB,
-        KC_LSFT,   KC_A,      KC_W,      KC_D,      KC_F,             KC_NONE,   KC_LEFT,   KC_DOWN,      KC_RGHT,     KC_RSFT,
-        KC_LCTL,   KC_Z,      KC_S,      KC_C,      KC_V,             KC_NONE,   KC_NONE,   KC_NONE,      KC_NONE,     KC_RCTL,
+        KC_TAB,    KC_Q,      KC_X,      KC_E,      KC_R,             KC_NO,   KC_NO,   KC_UP,        KC_NO,     KC_TAB,
+        KC_LSFT,   KC_A,      KC_W,      KC_D,      KC_F,             KC_NO,   KC_LEFT,   KC_DOWN,      KC_RGHT,     KC_RSFT,
+        KC_LCTL,   KC_Z,      KC_S,      KC_C,      KC_V,             KC_NO,   KC_NO,   KC_NO,      KC_NO,     KC_RCTL,
                               KC_LALT,   KC_SPC,    LA_GFN,           DF(_DEF),  KC_SPC,    KC_PSCR
     ),
 
     [_GFN] = LAYOUT_split_3x5_3(
-        KC_5,      KC_1,      KC_2,      KC_3,      KC_4,             KC_NONE,   KC_NONE,   KC_UP,        KC_NONE,     KC_TAB,
-        KC_0,      KC_6,      KC_7,      KC_8,      KC_9,             KC_NONE,   KC_LEFT,   KC_DOWN,      KC_RGHT,     KC_RSFT,
-        KC_G,      KC_J,      KC_I,      KC_M,      KC_T,             KC_NONE,   KC_NONE,   KC_NONE,      KC_NONE,     KC_RCTL,
+        KC_5,      KC_1,      KC_2,      KC_3,      KC_4,             KC_NO,   KC_NO,   KC_UP,        KC_NO,     KC_TAB,
+        KC_0,      KC_6,      KC_7,      KC_8,      KC_9,             KC_NO,   KC_LEFT,   KC_DOWN,      KC_RGHT,     KC_RSFT,
+        KC_G,      KC_J,      KC_I,      KC_M,      KC_T,             KC_NO,   KC_NO,   KC_NO,      KC_NO,     KC_RCTL,
                               KC_ESC,    KC_ENT,    _______,          _______,   _______,   _______
     ),
 
@@ -79,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                               _______,   _______,   _______,          _______,   _______,   _______
     ),
 
-    [_ALT] = LAYOUT_split_3x5_2(
+    [_ALT] = LAYOUT_split_3x5_3(
         RALT(KC_Q), RALT(KC_W), RALT(KC_E), RALT(KC_R), RALT(KC_T),        RALT(KC_Y), RALT(KC_U), RALT(KC_I),    RALT(KC_O),   RALT(KC_P),
         RALT(KC_A), RALT(KC_S), RALT(KC_D), RALT(KC_F), RALT(KC_G),        RALT(KC_H), RALT(KC_J), RALT(KC_K),    RALT(KC_L),   RALT(KC_SCLN),
         RALT(KC_Z), RALT(KC_X), RALT(KC_C), RALT(KC_V), RALT(KC_B),        RALT(KC_N), RALT(KC_M), RALT(KC_COMM), RALT(KC_DOT), RALT(KC_SLSH),
@@ -93,7 +93,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                               _______,   LA_CMD,    _______,          _______,   _______,   _______
     ),
 
-    [_CMD] = LAYOUT_split_3x5_2(
+    [_CMD] = LAYOUT_split_3x5_3(
         MEH(KC_Q), MEH(KC_W), MEH(KC_E), MEH(KC_R), MEH(KC_T),        MEH(KC_Y), KC_VOLD,   KC_MUTE,      KC_VOLU,     MEH(KC_P),
         MEH(KC_A), MEH(KC_S), MEH(KC_D), MEH(KC_F), MEH(KC_G),        MEH(KC_H), KC_MPRV,   KC_MPLY,      KC_MNXT,     MEH(KC_SCLN),
         MEH(KC_Z), MEH(KC_X), MEH(KC_C), MEH(KC_V), MEH(KC_B),        MEH(KC_N), MEH(KC_M), MEH(KC_COMM), MEH(KC_DOT), MEH(KC_SLSH),
