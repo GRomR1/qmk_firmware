@@ -1,5 +1,5 @@
 #include QMK_KEYBOARD_H
-
+#include <stdio.h>
 #include "oneshot.h"
 #include "swapper.h"
 #include "leds.c"
