@@ -2,6 +2,7 @@
 
 #include "oneshot.h"
 #include "swapper.h"
+#include "leds.c"
 
 #define RESET QK_BOOT
 
