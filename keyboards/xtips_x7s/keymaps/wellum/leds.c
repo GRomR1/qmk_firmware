@@ -1,3 +1,14 @@
+enum layers {
+    _DEF,
+    _GAM,
+    _GFN,
+    _SYM,
+    _ALT,
+    _NAV,
+    _CMD,
+    _NUM,
+};
+
 /*Remember to also change the color in keyboard_post_init_kb in boston.c to make the startup color match the layer 0 color */
 const rgblight_segment_t PROGMEM capslock_layer[] = RGBLIGHT_LAYER_SEGMENTS(
     {0, 2, HSV_WHITE}  /*White*/
@@ -63,7 +74,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     rgblight_set_layer_state(6, layer_state_cmp(state, 6));
     rgblight_set_layer_state(7, layer_state_cmp(state, 7));
     rgblight_set_layer_state(8, layer_state_cmp(state, 8));
-    return state;
+    return update_tri_layer_state(state, _SYM, _NAV, _NUM);
 }
 
 bool led_update_user(led_t led_state) {
