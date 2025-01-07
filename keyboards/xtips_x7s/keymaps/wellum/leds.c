@@ -1,13 +1,3 @@
-enum layers {
-    _DEF,
-    _GAM,
-    _GFN,
-    _SYM,
-    _ALT,
-    _NAV,
-    _CMD,
-    _NUM,
-};
 
 /*Remember to also change the color in keyboard_post_init_kb in boston.c to make the startup color match the layer 0 color */
 const rgblight_segment_t PROGMEM capslock_layer[] = RGBLIGHT_LAYER_SEGMENTS(
